@@ -49,13 +49,13 @@ nav{
 #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;z-index:1;padding:8rem 3rem 5rem;overflow:hidden;}
 .hero-bg-text{position:absolute;font-family:"Syne",sans-serif;font-size:clamp(10rem,20vw,18rem);font-weight:800;color:rgba(108,99,255,0.03);letter-spacing:-0.05em;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;user-select:none;animation:bgDrift 20s ease-in-out infinite alternate;}
 @keyframes bgDrift{from{transform:translate(-50%,-50%) scale(1);}to{transform:translate(-52%,-48%) scale(1.05);}}
-.hero-inner{max-width:900px;text-align:center;position:relative;}
+.hero-inner{max-width:800px;text-align:center;position:relative;width:100%;}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;font-family:"JetBrains Mono",monospace;font-size:0.75rem;color:var(--a1);border:1px solid var(--border);padding:8px 20px;border-radius:100px;margin-bottom:2.5rem;background:rgba(108,99,255,0.06);animation:badgePulse 3s ease-in-out infinite,fadeUp 0.8s ease both;}
 @keyframes badgePulse{0%,100%{box-shadow:0 0 0 0 var(--glow);}50%{box-shadow:0 0 20px 4px var(--glow);}}
 .badge-dot{width:8px;height:8px;border-radius:50%;background:var(--a1);animation:dotBlink 2s infinite;}
 @keyframes dotBlink{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.3;transform:scale(0.7);}}
-.hero-name{font-family:"Syne",sans-serif;font-size:clamp(3.5rem,9vw,7.5rem);font-weight:800;line-height:0.95;letter-spacing:-0.04em;margin-bottom:1.5rem;animation:fadeUp 0.8s 0.15s ease both;}
-.name-line{display:block;overflow:hidden;}
+.hero-name{font-family:"Syne",sans-serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:800;line-height:1.05;letter-spacing:-0.03em;margin-bottom:1.5rem;animation:fadeUp 0.8s 0.15s ease both;}
+.name-line{display:block;}
 .name-word{display:inline-block;background:linear-gradient(135deg,#fff 30%,var(--a1) 60%,var(--a2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:wordReveal 1s cubic-bezier(0.16,1,0.3,1) both;}
 .name-word:nth-child(2){animation-delay:0.1s;}
 @keyframes wordReveal{from{transform:translateY(100%);opacity:0;}to{transform:translateY(0);opacity:1;}}
